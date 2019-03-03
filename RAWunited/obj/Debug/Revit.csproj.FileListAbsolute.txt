@@ -1,0 +1,6 @@
+D:\Study\labs\labs5th\WE\VSProjects\Revit\Revit\bin\Revit.dll.config
+D:\Study\labs\labs5th\WE\VSProjects\Revit\Revit\bin\Revit.dll
+D:\Study\labs\labs5th\WE\VSProjects\Revit\Revit\bin\Revit.pdb
+D:\Study\labs\labs5th\WE\VSProjects\Revit\Revit\obj\Debug\Revit.csprojResolveAssemblyReference.cache
+D:\Study\labs\labs5th\WE\VSProjects\Revit\Revit\obj\Debug\Revit.dll
+D:\Study\labs\labs5th\WE\VSProjects\Revit\Revit\obj\Debug\Revit.pdb
