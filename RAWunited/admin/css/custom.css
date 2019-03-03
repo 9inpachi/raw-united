@@ -1,0 +1,155 @@
+.container-small{
+    width: 600px;
+    margin: auto;
+    max-width: 98%;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #ffeeee;
+}
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+    border: 1px solid #e5e5e5;
+}
+.loads-table a>.fa{
+    font-size: 20px;
+    color: #ff5959;
+}
+.purchase-load-actions>a{
+    margin-right: 10px;
+}
+.paginate_button.active>a{
+    background: #ff5959;
+    border: 1px solid #ff5959;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color: #ff5959;
+    border-color: #ff5959;
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    z-index: 2;
+    color: #ff5959;
+    background-color: #eee;
+    border-color: #ff5959;
+}
+.box.box-danger{
+    border-top-color: #ff7676;
+}
+.btn.btn-danger{
+    background: #ff7676;
+    border-color: #ff7676;
+}
+.btn.btn-danger:focus, .btn.btn-danger:hover, .btn.btn-danger:active{
+    background: #dd5d5d;
+    border-color: #dd5d5d;
+}
+/*Token*/
+.token-table tr td{
+    text-align: left;
+    padding: 10px 5px;
+}
+.token-table tr td input{
+    margin: 0;
+}
+.token-table tr td:nth-child(3){
+    float: none;
+    padding: 3px 5px;
+}
+.token-price{
+    background: #ff7676;
+    color: white;
+    font-weight: bold;
+    padding: 3px 35px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.token-table{
+    margin: 0 auto; 
+}
+.key{
+    background: #4fa0ff;
+    color: white;
+    font-size: 20px;
+    width: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.alert.alert-danger, .alert-error{
+    color: #a94442 !important;
+    background-color: #f2dede !important;
+    border-color: #ebccd1 !important;
+}
+.admin-req-input{
+    padding: 6px 12px;
+}
+.styled-input{
+    width: 100%;
+    background: #ebebeb;
+    border: none;
+    font-size: 16px;
+    color: #909090;
+    padding: 6px 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ffa9a9;
+    box-shadow: 0px 1px 5px #c7c7c7;
+}
+.alert.alert-success{
+    color: #3c763d !important;
+    background-color: #dff0d8 !important;
+    border-color: #d6e9c6 !important;
+}
+.admin-tid-form>input, .admin-settings-form>input, .admin-settings-form>textarea{
+    width: 300px;
+    max-width: 95%;
+    margin: auto;
+    display: block;
+}
+.admin-prp-settings{
+    border: 1px solid #ff7676;
+    box-shadow: 0px 2px 5px #b9b9b9;
+    width: 150px;
+}
+.upload-img-input input{
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -20px;
+    left: 0;
+    cursor: pointer;
+}
+.upload-img-input{
+    width: 150px;
+    padding: 8px 20px;
+    background: #ff7676;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+    z-index: 1000;
+}
+.upload-img-label{
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+}
+.user-info{
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20px; 
+}
+.user-prp{
+    border: 1px solid #ff7676;
+    box-shadow: 0px 2px 5px #b9b9b9;
+}
+table.load-comp-table>tbody>tr:nth-of-type(odd), table.load-comp-table>tbody>tr:nth-of-type(even){
+    background-color: #97ff97;
+}
+.load-comp-table tr:first-child, .load-comp-table tr:last-child{
+    background-color: #ffeeee;
+}
