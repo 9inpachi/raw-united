@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="RAWunited.login" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="RAWunited.login" %>
 
 <!DOCTYPE html>
 
@@ -21,15 +21,17 @@
             <div class="form-group">
                 <label>Username</label>
                 <asp:TextBox ID="loginUsername" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="passwordValidator" runat="server" ErrorMessage="Password is required" ControlToValidate="loginPassword" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+
             </div>
             <div class="form-group">
                 <label>Password</label>
                 <asp:TextBox ID="loginPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="usernameValidator" runat="server" ErrorMessage="Username is required" ControlToValidate="loginUsername" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+
             </div>
             <div class="form-group">
                 <asp:Label ID="Result" runat="server" Text="" ForeColor="Red"></asp:Label>
-                <asp:RequiredFieldValidator ID="passwordValidator" runat="server" ErrorMessage="Password is required" ControlToValidate="loginPassword" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
-                <asp:RequiredFieldValidator ID="usernameValidator" runat="server" ErrorMessage="Username is required" ControlToValidate="loginUsername" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
             </div>
             <asp:Button ID="loginBtn" CssClass="btn btn-primary" runat="server" Text="Login" OnClick="LoginBtn_Click" />
             <div class="form-group already-reg">
