@@ -1302,9 +1302,7 @@
 
 /* One */
 
-	#one {
-		padding-bottom: 0;
-	}
+	
 
 		#one .slider .viewer {
 			border-bottom-left-radius: 0;
@@ -1371,6 +1369,3 @@
 		#footer .copyright {
 			font-size: 0.8em;
 		}
-#one{
-padding-bottom:60px;
-}
