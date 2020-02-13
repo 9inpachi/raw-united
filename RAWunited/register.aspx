@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="register.aspx.cs" Inherits="RAWunited.register" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="register.aspx.cs" Inherits="RAWunited.register" %>
 
 <!DOCTYPE html>
 
@@ -24,35 +24,41 @@
             <div class="form-group">
                 <label>Full Name</label>
                 <asp:TextBox ID="FullName" runat="server" CssClass="form-control"></asp:TextBox>
-            </div>
+                <asp:RequiredFieldValidator ID="FullNameRequired" runat="server" ErrorMessage="Full name is required" ControlToValidate="FullName" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+
+                </div>
             <div class="form-group">
                 <label>Email</label>
                 <asp:TextBox ID="Email" runat="server" CssClass="form-control" TextMode="Email"></asp:TextBox>
-            </div>
+                         <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ErrorMessage="Email is required" ControlToValidate="Email" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+
+                </div>
             <div class="form-group">
                 <label>Username</label>
                 <asp:TextBox ID="Username" runat="server" CssClass="form-control"></asp:TextBox>
+                 <asp:RequiredFieldValidator ID="UsernameRequired" runat="server" ErrorMessage="Username is required" ControlToValidate="Username" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+
             </div>
             <div class="form-group">
                 <label>Date of Birth</label>
                 <asp:TextBox ID="DOB" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
+          <asp:RequiredFieldValidator ID="DOBRequired" runat="server" ErrorMessage="Date of birth is required" ControlToValidate="DOB" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+
             </div>
             <div class="form-group">
                 <label>Password</label>
                 <asp:TextBox ID="Password" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ErrorMessage="Password is required" ControlToValidate="Password" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+
             </div>
             <div class="form-group">
                 <label>Confirm Password</label>
                 <asp:TextBox ID="ConfirmPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
-            </div>
-            <div class="err form-group">
-                <asp:RequiredFieldValidator ID="UsernameRequired" runat="server" ErrorMessage="Username is required" ControlToValidate="Username" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
-                <asp:RequiredFieldValidator ID="FullNameRequired" runat="server" ErrorMessage="Full name is required" ControlToValidate="FullName" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
-                <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ErrorMessage="Email is required" ControlToValidate="Email" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
-                <asp:RequiredFieldValidator ID="DOBRequired" runat="server" ErrorMessage="Date of birth is required" ControlToValidate="DOB" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
-                <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ErrorMessage="Password is required" ControlToValidate="Password" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
                 <asp:RequiredFieldValidator ID="CPasswordRequired" runat="server" ErrorMessage="Confirm Password is required" ControlToValidate="ConfirmPassword" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
                 <asp:CompareValidator ID="ComparePassword" runat="server" ErrorMessage="Password and Confirm Password are different" ControlToCompare="password" ControlToValidate="confirmPassword" ForeColor="Red" Display="Dynamic"></asp:CompareValidator>            
+
+            </div>
+            <div class="err form-group">
             </div>
             <asp:Button ID="RegisterBtn" CssClass="btn btn-primary" runat="server" Text="Register" OnClick="RegisterBtn_Click" />
             <div class="form-group already-reg">
